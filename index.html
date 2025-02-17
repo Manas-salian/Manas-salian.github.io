@@ -1,33 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Manas's Portfolio</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Manas's Portfolio</h1>
-	</header>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="#">About</a>
-		<a href="#">Projects</a>
-		<a href="contact.html">Contact</a>
-	</nav>
-	<section>
-		<h2>About Me</h2>
-		<p>Hi, I'm Manas. I'm Comp-Sci student based in Mangaluru, Karnataka, India. I'm passionate about coding and I am interested in feilds like cyber-security and web development.</p>
-	</section>
-	<section>
-		<h2>Projects</h2>
-		<ul>
-			<li><a href="https://github.com/Manas-salian/micro-projects/blob/main/c-language/tictactoe.c">A simple TIC-TAC-TOE game</a></li>
-		</ul>
-	</section>
-	<footer>
-		<p>© 2023 Manas S. All rights reserved.</p>
-	</footer>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="content">
+                <img src="assets/temp.jpg" alt="">
+                <h1>Welcome to my Portfolio</h1>
+                <p>Hi, I am <span>Manas S</span> a web developer</p>
+                <a href="#" class="btn" onclick="downloadCV()">Download CV</a>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="content">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div id="skills" class="about">
+            <div class="content">
+                <h3>My Skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div id="team" class="about">
+            <div class="content">
+                <h3>Teams</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function downloadCV() {
+            window.open('assets/Manas_Resume.pdf', '_blank');
+        }
+    </script>
 </body>
 </html>

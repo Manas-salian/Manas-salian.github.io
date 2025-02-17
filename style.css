@@ -1,50 +1,121 @@
 body {
-	font-family: Arial, sans-serif;
-	background-color: #f1f1f1;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header {
-	background-color: #333;
-	color: white;
-	padding: 30px;
-	text-align: center;
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 
-h1 {
-	font-size: 50px;
-	margin-bottom: 0;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #333;
 }
 
-nav {
-	background-color: #ddd;
-	overflow: hidden;
+.navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-nav a {
-	float: left;
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+.navbar .menu ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
 }
 
-nav a:hover {
-	background-color: #ddd;
-	color: black;
+.navbar .menu ul li {
+    margin-left: 20px;
 }
 
-section {
-	background-color: white;
-	padding: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+.navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-footer {
-	background-color: #333;
-	color: white;
-	padding: 10px;
-	text-align: center;
+.banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: -20px;  /* Extend beyond the container */
+    left: -20px;
+    width: calc(100% + 40px);  /* Increase width to compensate */
+    height: calc(100% + 40px);  /* Increase height to compensate */
+    background: url('assets/banner.jpeg') no-repeat center center/cover;
+    filter: blur(8px);
+    opacity: 0.8;
+    z-index: -1;
+}
+.banner .content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner .content img {
+    width: 200px;  /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;  /* Makes the image circular */
+    border: 4px solid #fff;  /* White border/outline */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);  /* Optional: adds subtle shadow */
+    margin-bottom: 20px;  /* Space between image and text */
+    object-fit: cover;  /* Ensures image covers the area without distortion */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner .content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.banner .content .btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.about {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about .content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
 }
